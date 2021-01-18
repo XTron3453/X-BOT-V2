@@ -10,7 +10,7 @@ class Game(commands.Cog):
 	def __init__(self, server_id):
 		self.server = server_id
 		self.ctx = None
-		self.connection = MongoClient("mongodb+srv://XTRON:KurokoSh%21ra1@x-bot.z3s0i.mongodb.net/test?authSource=admin&replicaSet=atlas-d6sk26-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true")
+		self.connection = MongoClient("Token")
 		self.database = self.connection['X-BOTV2']
 		self.collection = self.database['Game Data']
 
